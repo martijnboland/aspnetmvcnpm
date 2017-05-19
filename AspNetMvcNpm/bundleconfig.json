@@ -1,0 +1,21 @@
+﻿[
+  {
+    "outputFileName": "bundles/css/vendor.css",
+    "inputFiles": [
+      "node_modules/bootstrap/dist/css/bootstrap.css"
+    ]
+  },
+  {
+    "outputFileName": "bundles/js/vendor.js",
+    "inputFiles": [
+      "node_modules/jquery/dist/jquery.js",
+      "node_modules/bootstrap/dist/js/bootstrap.js"
+    ]
+  },
+  {
+    "outputFileName": "bundles/js/my.js",
+    "inputFiles": [
+      "Scripts/*.js"
+    ]
+  }
+]

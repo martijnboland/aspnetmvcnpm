@@ -89,6 +89,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bundles\css\vendor.css" />
+    <Content Include="bundles\css\vendor.min.css">
+      <DependentUpon>vendor.css</DependentUpon>
+    </Content>
+    <Content Include="bundles\js\my.js" />
+    <Content Include="bundles\js\vendor.js" />
+    <Content Include="bundles\js\vendor.min.js">
+      <DependentUpon>vendor.js</DependentUpon>
+    </Content>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -106,6 +115,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="package.json" />
+    <Content Include="bundleconfig.json" />
+    <Content Include="Views\Shared\_Header.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -116,6 +128,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

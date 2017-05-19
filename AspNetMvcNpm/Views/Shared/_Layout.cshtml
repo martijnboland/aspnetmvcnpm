@@ -1,15 +1,22 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.Mvc.Html
+<!DOCTYPE html>
 
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/bundles/css/vendor.css" />
     @RenderSection("head", false)
 </head>
 <body>
     <div>
-        @RenderBody()
+        @Html.Partial("_Header")
+        <div class="container">
+            @RenderBody()            
+        </div>
     </div>
+    <script type="text/javascript" src="~/bundles/js/vendor.js"></script>
+    <script type="text/javascript" src="~/bundles/js/my.js"></script>
     @RenderSection("scripts", false)
 </body>
 </html>
